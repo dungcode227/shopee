@@ -1,0 +1,191 @@
+/*
+Theme Name: Shop2
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+@font-face {
+  font-family: Conv_Quicksand-Bold;
+  src: url(../shop2/news-fonts/Quicksand-Bold.woff);
+}
+@font-face {
+  font-family: Conv_Quicksand-Medium;
+  src: url(../shop2/news-fonts/Quicksand-Medium.woff);
+}
+body {color: black !important;font-family: "Conv_Quicksand-Medium",Roboto Condensed,Helvetica Neue,Helvetica,Arial,sans-serif !important;}
+h1, h2, h3, h4, h5, h6, .heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a, #mega-menu-title {
+    font-family: "Conv_Quicksand-Bold",Roboto Condensed,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+.manhphuc-popup-quickbuy, .nav > li > a {
+    font-family: "Conv_Quicksand-Medium",Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+/*************** ADD CUSTOM CSS HERE.   ***************/
+.showinfo {
+    position: absolute;
+    top: 0px;
+    width:100%;
+    height:100%;
+    z-index:22;
+    display:block;
+    background: #fff; 
+}
+.product-small:hover .showinfo{
+    display:block;
+    cursor:pointer;
+    opaticy: 0.5;
+}
+
+    .buy_repay {
+        line-height: normal;
+        display: block;
+        padding: 7px 0;
+        text-align: center;
+        margin: 10px 0px 15px;
+        background: #288ad6;
+        color: #fff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        font-size: 16px;
+        text-transform: uppercase;
+        width: 48.5%;
+        float: left;
+    }
+    .buy_repay span {
+        display: block;
+        font-size: 13px;
+        color: #fff;
+        text-transform: none;
+        padding-top: 3px;
+    }
+    .buy_repay.s {
+        float: right;
+    }
+    a.buy_repay:hover {
+        color: white;
+    }
+    .area_promotion {
+        display: block;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        position: relative;
+        background: #fff;
+        padding-bottom: 10px;
+    }
+    .area_promotion strong {
+        display: block;
+        overflow: hidden;
+        font-size: 15px;
+        color: #333;
+        padding: 15px 15px 10px 15px;
+        text-transform: uppercase;
+    }
+    .area_promotion .infopr span {
+        display: block;
+        overflow: hidden;
+        font-size: 14px;
+        color: #333;
+        padding: 0 15px 5px 40px;
+    }
+    .area_promotion .infopr span:before {
+        content: '';
+        margin-left: -20px;
+        background: url('../tiki-child/images/check@2x.png');
+        width: 14px;
+        height: 14px;
+        background-size: 14px 14px;
+        margin-right: 0;
+        float: left;
+        margin-top: 2px;
+    }
+    .area_promotion.zero span .sao {
+        display: inline;
+        font-weight: bold;
+    }
+    .area_promotion .onlinepromo {
+        border: #d0021b solid 1px;
+        border-radius: 4px;
+        padding: 20px 0 10px;
+        position: relative;
+        overflow: visible;
+        margin: 20px 10px 0;
+    }
+    .area_promotion .onlinepromo b {
+        background: #ec1933;
+        border-radius: 13px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        position: absolute;
+        top: -13px;
+        left: 10px;
+        vertical-align: middle;
+        line-height: 26px;
+        clear: both;
+        padding: 0 15px 0 30px;
+    }
+    .area_promotion .onlinepromo b:before {
+        content: '';
+        background: url('../tiki-child/images/icon-qua-tang@2x.png');
+        width: 16px;
+        height: 15px;
+        background-size: 16px 15px;
+        float: left;
+        margin: 4px 5px 0 -15px;
+    }
+    .not-repay {
+        margin-top: 5px;
+        padding: 5px 10px;
+        color: #d0021b;
+        font-size: 14px;
+    }
+    a.manhphuc_buy_now {
+        max-width: unset;
+    }
+    .single-product .large-9 {
+        border-right: none!important;
+    }
+    /*CART BUTON*/
+    .single_add_to_cart_button {
+        border: none;
+        color: #fff;
+        white-space: nowrap;
+        width: 220px;
+        height: 40px;
+        cursor: pointer;
+        vertical-align: top;
+        font-size: 13px !important;
+        padding: 0px 15px 0 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        background: url(../shop2/images/ic-cart@2x.png) 23px center no-repeat #ff5622;
+        font-weight: 400;
+        letter-spacing: .5px;
+        background-size: 26px;
+        display: inline-block;
+        text-align: center;
+        background-color: #ff5622 !important;
+    }
+
+    .scroll-to-bullets a, .featured-title, .label-new.menu-item > a:after, .nav-pagination > li > .current, .nav-pagination > li > span:hover, .nav-pagination > li > a:hover, .has-hover:hover .badge-outline .badge-inner, button[type="submit"], .button.wc-forward:not(.checkout):not(.checkout-button), .button.submit-button, .button.primary:not(.is-outline), .featured-table .title, .is-outline:hover, .has-icon:hover .icon-label, .nav-dropdown-bold .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold > li > a:hover, .nav-dropdown-bold.dark .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold.dark > li > a:hover, .is-outline:hover, .tagcloud a:hover, .grid-tools a, input[type='submit']:not(.is-form), .box-badge:hover .box-text, input.button.alt, .nav-box > li > a:hover, .nav-box > li.active > a, .nav-pills > li.active > a, .current-dropdown .cart-icon strong, .cart-icon:hover strong, .nav-line-bottom > li > a:before, .nav-line-grow > li > a:before, .nav-line > li > a:before, .banner, .header-top, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover, .button.primary:not(.is-outline), input[type='submit'].primary, input[type='submit'].primary, input[type='reset'].button, input[type='button'].primary, .badge-inner {
+        background-color: #ff0052;
+    }
+
+    .commentlist li img {
+        border-radius: 50%;
+    }
+    .comment-text.flex-col.flex-grow {
+        padding-left: 10px;
+    }
+    a#top-link {
+        border: 2px solid #ff0052;
+        background-color: #ff0052 !important;
+    }
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
